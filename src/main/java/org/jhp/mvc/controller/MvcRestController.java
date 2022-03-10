@@ -24,7 +24,11 @@ public class MvcRestController {
      */
     @RequestMapping(value="/callMethod1", method={RequestMethod.GET})
     public void method1() throws Exception {
-        System.out.println("in");
+        logger.info("in");
+        
+        
+        
+        
         throw new ApiException();
     }
 

@@ -15,6 +15,7 @@ public class MvcController {
     @RequestMapping(value="/callMethod1", method={RequestMethod.GET})
     public void method1() throws ApiException {
         System.out.println("in");
+        logger.info("test");
         throw new ApiException();
     }
     
