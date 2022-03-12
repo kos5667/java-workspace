@@ -3,6 +3,11 @@ import java.util.*;
 
 public class Q2460 {
     public static void main(String[] args) {
+        // answer1();
+        answer2();
+    }
+    
+    public static void answer1() {
         try (Scanner scan = new Scanner(System.in)) {
             List<Integer> list = new ArrayList<Integer>();
             list.add(0);
@@ -20,5 +25,19 @@ public class Q2460 {
             }
             System.out.println(max);
         }
-    }    
+    }
+
+    public static void answer2() {
+        try (Scanner scan = new Scanner(System.in)) {
+            int n=0,m=0;
+
+            for(int i=0; i<10; i++) {
+                int a=scan.nextInt(),b=scan.nextInt();
+
+                n += (-a) + b;
+                m = Math.max(n,m);
+            }
+            System.out.println(m);
+        }
+    }
 }
