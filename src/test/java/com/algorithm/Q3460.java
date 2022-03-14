@@ -2,6 +2,10 @@ package com.algorithm;
 
 import java.util.Scanner;
 
+/**
+ * 이진수
+ * 3460 : 브론즈Ⅲ
+ */
 public class Q3460 {
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {

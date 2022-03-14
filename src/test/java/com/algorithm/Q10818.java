@@ -1,6 +1,11 @@
 package com.algorithm;
 
 import java.util.*;
+
+/**
+ * 최소, 최대
+ * 10818 : 브론즈Ⅲ
+ */
 public class Q10818 {
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {

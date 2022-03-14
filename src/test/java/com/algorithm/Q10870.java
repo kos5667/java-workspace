@@ -1,5 +1,9 @@
 package com.algorithm;
 import java.util.*;
+/**
+ * 피보나치 수 5
+ * 10870 : 브론즈Ⅱ
+ */
 public class Q10870 {
     public static void main(String[] args) {
         // answer1();

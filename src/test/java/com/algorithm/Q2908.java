@@ -2,6 +2,10 @@ package com.algorithm;
 
 import java.util.Scanner;
 
+/**
+ * 상수
+ * 2908 : 브론즈Ⅱ
+ */
 public class Q2908 {
 
     public static void main(String[] args) {
