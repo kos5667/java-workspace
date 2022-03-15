@@ -1,9 +1,9 @@
-# Java
+## Java
   * AOP
   * Lambda
 
-# Algorithm
-  * BaekJoon
+## Algorithm
+  ### BaekJoon
     - Bronze
       - 2309(일곱 난쟁이)
       - 2460(지능형 기차 2)
@@ -19,6 +19,6 @@
       - 2693(N번째 큰 수)
     - Gold
     
-# Technology
+## Technology
   * ElasticSearch
   * TensorFlow
