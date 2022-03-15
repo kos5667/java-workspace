@@ -1,5 +1,4 @@
-package com.algorithm;
-
+package com.algorithm.silver;
 import java.util.*;
 
 /**

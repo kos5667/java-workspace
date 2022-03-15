@@ -1,4 +1,4 @@
-package com.algorithm;
+package com.algorithm.bronze;
 import java.util.*;
 
 /**
