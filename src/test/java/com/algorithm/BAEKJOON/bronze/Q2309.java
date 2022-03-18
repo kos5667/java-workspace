@@ -9,7 +9,7 @@ import java.util.*;
 public class Q2309 {
     public static void main(String[] args) {
         // answer1();
-        // answer2();
+        answer2();
         answer3();
     }    
     

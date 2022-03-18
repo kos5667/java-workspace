@@ -36,10 +36,10 @@ public class StreamsTest {
      */
     @Test
     public void createArrayStreams() {
-        String[] arr = new String[]{"a","b","c"};
+        // String[] arr = new String[]{"a","b","c"};
 
-        Stream<String> stream = Arrays.stream(arr);
-        Stream<String> streamOfArrayPart = Arrays.stream(arr, 1, 3);
+        // Stream<String> stream = Arrays.stream(arr);
+        // Stream<String> streamOfArrayPart = Arrays.stream(arr, 1, 3);
     }
     
     /**
@@ -47,10 +47,10 @@ public class StreamsTest {
      */
     @Test
     public void createCollectionStreams() {
-        List<String> list = Arrays.asList("a","b","c");
+        // List<String> list = Arrays.asList("a","b","c");
 
-        Stream<String> stream = list.stream();
-        Stream<String> parallelStream = list.parallelStream();
+        // Stream<String> stream = list.stream();
+        // Stream<String> parallelStream = list.parallelStream();
     }
 
     
@@ -62,9 +62,9 @@ public class StreamsTest {
          * 빌더(Builder)를 사용하면 스트림에 직접적으로 원하는 값을 넣을 수 있습니다. 
          * 마지막에 build 메소드로 스트림을 리턴합니다.
          */
-        Stream<String> buildeStream = Stream.<String>builder()
-            .add("Eric").add("Elena").add("Java")
-            .build(); // [Eric, Elena, Java]
+        // Stream<String> buildeStream = Stream.<String>builder()
+        //     .add("Eric").add("Elena").add("Java")
+        //     .build(); // [Eric, Elena, Java]
 
         /**
          * Stream.generate()
@@ -76,7 +76,7 @@ public class StreamsTest {
          * 이 때 생성되는 스트림은 크기가 정해져있지 않고 무한(infinite)하기 때문에 특정 사이즈로 최대 크기를 제한해야 합니다.
          * 5개의 “gen” 이 들어간 스트림이 생성됩니다.
          */
-        Stream<String> generatedStream = Stream.generate(() -> "gen").limit(5); // [el, el, el, el, el]
+        // Stream<String> generatedStream = Stream.generate(() -> "gen").limit(5); // [el, el, el, el, el]
 
         /**
          * Stream.iterate()
@@ -85,7 +85,7 @@ public class StreamsTest {
          * 다음 예제에서는 30이 초기값이고 값이 2씩 증가하는 값들이 들어가게 됩니다. 즉 요소가 다음 요소의 인풋으로 들어갑니다. 
          * 이 방법도 스트림의 사이즈가 무한하기 때문에 특정 사이즈로 제한해야 합니다.
          */
-        Stream<Integer> iteratedStream = Stream.iterate(30, n -> n + 2).limit(5); // [30, 32, 34, 36, 38]
+        // Stream<Integer> iteratedStream = Stream.iterate(30, n -> n + 2).limit(5); // [30, 32, 34, 36, 38]
 
         /**
          * 기본 타입형 스트림
@@ -94,22 +94,22 @@ public class StreamsTest {
          * 하지만 제네릭을 사용하지 않고 직접적으로 해당 타입의 스트림을 다룰 수도 있습니다. range 와 rangeClosed 는 범위의 차이입니다. 
          * 두 번째 인자인 종료지점이 포함되느냐 안되느냐의 차이입니다.
          */
-        IntStream intStream = IntStream.range(1, 5); // [1, 2, 3, 4]
-        LongStream  longStream = LongStream.rangeClosed(1, 5); // [1, 2, 3, 4, 5]
+        // IntStream intStream = IntStream.range(1, 5); // [1, 2, 3, 4]
+        // LongStream  longStream = LongStream.rangeClosed(1, 5); // [1, 2, 3, 4, 5]
 
         /**
          * 제네릭을 사용하지 않기 때문에 불필요한 오토박싱(auto-boxing)이 일어나지 않습니다. 
          * 필요한 경우 boxed 메소드를 이용해서 박싱(boxing)할 수 있습니다.
          */
-        Stream<Integer> boxedIntStream = IntStream.range(1, 5).boxed();
+        // Stream<Integer> boxedIntStream = IntStream.range(1, 5).boxed();
 
         /**
          * Java 8 의 Random 클래스는 난수를 가지고 세 가지 타입의 스트림(IntStream, LongStream, DoubleStream)을 만들어낼 수 있습니다. 
          * 쉽게 난수 스트림을 생성해서 여러가지 후속 작업을 취할 수 있어 유용합니다.
          */
-        DoubleStream doubles = new Random().doubles(3); // 난수 3개 생성
-        LongStream longs = new Random().longs(3); // 난수 3개 생성
-        IntStream ints = new Random().ints(3); // 난수 3개 생성
+        // DoubleStream doubles = new Random().doubles(3); // 난수 3개 생성
+        // LongStream longs = new Random().longs(3); // 난수 3개 생성
+        // IntStream ints = new Random().ints(3); // 난수 3개 생성
 
         /**
          * 문자열 스트링
@@ -117,17 +117,17 @@ public class StreamsTest {
          * 스트링을 이용해서 스트림을 생성할수도 있습니다. 다음은 스트링의 각 문자(char)를 IntStream 으로 변환한 예제입니다. 
          * char 는 문자이지만 본질적으로는 숫자이기 때문에 가능합니다.
          */
-        IntStream charsStream = "Stream".chars(); // [83, 116, 114, 101, 97, 109]
+        // IntStream charsStream = "Stream".chars(); // [83, 116, 114, 101, 97, 109]
 
         // 다음은 정규표현식(RegEx)을 이용해서 문자열을 자르고, 각 요소들로 스트림을 만든 예제입니다.
-        Stream<String> stringStream = Pattern.compile(", ").splitAsStream("Eric, Elena, Java"); // [Eric, Elena, Java]
+        // Stream<String> stringStream = Pattern.compile(", ").splitAsStream("Eric, Elena, Java"); // [Eric, Elena, Java]
 
         /**
          * 파일 스트림
          * 
          * 자바 NIO 의 Files 클래스의 lines 메소드는 해당 파일의 각 라인을 스트링 타입의 스트림으로 만들어줍니다.
          */
-        Stream<String> lineStream = Files.lines(Paths.get("file.txt"), Charset.forName("UTF-8"));
+        // Stream<String> lineStream = Files.lines(Paths.get("file.txt"), Charset.forName("UTF-8"));
 
         /**
          * 병렬 스트림 Parallel Stream
