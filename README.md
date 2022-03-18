@@ -1,9 +1,3 @@
-## Java
-  * AOP
-  * Lambda
-  * Memory Heap, Stack
-  * Recursive
-
 ## Algorithm
   - BaekJoon
     - BRONZE
@@ -31,7 +25,13 @@
     - RUBY
     
   - Programmers
-    
+
+## Java
+  * AOP
+  * Lambda
+  * Memory Heap, Stack
+  * Recursive    
+  
 ## Technology
   * ElasticSearch
   * TensorFlow
