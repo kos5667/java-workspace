@@ -1,6 +1,8 @@
 ## Java
   * AOP
   * Lambda
+  * Memory Heap, Stack
+  * Recursive
 
 ## Algorithm
   - BaekJoon
@@ -21,6 +23,8 @@
       - 1934(최소공배수)
       - 1292(쉽게 푸는 문제)
       - 2581(소수)
+      - 14888(연산자 끼워넣기) 미완
+      - 2504(괄호의 값) 미완
     - GOLD
     - PLATINUM
     - DIAMOND
