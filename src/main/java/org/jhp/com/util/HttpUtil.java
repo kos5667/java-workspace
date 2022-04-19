@@ -7,15 +7,11 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
 public class HttpUtil {
  
-    private Logger log = LoggerFactory.getLogger(this.getClass());
-
     /**
      * HttpClient Request GET
      * @param url

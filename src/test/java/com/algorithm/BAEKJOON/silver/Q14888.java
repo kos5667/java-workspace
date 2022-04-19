@@ -19,6 +19,7 @@ public class Q14888 {
             if(i % 2 == 0) {
             }
         }
+        bw.close();
     }
 
     public static String[] getOperator() {

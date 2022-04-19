@@ -1,16 +1,6 @@
 package com.technology.java;
 
 import java.io.IOException;
-import java.nio.*;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.*;
-import java.util.regex.Pattern;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
 
