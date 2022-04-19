@@ -123,7 +123,7 @@ public class lotto {
             }
         }
 
-        if(du >= 5) return false;
+        if(du >= 6) return false;
         else return true;
     }
 
