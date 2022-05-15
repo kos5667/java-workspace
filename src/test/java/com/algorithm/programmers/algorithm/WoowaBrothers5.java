@@ -1,3 +1,5 @@
+package com.algorithm.programmers.algorithm;
+
 import java.util.Scanner;
 
 public class WoowaBrothers5 {
