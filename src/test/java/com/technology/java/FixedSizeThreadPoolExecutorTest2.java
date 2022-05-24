@@ -1,4 +1,4 @@
-package com.demo;
+package com.technology.java;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;

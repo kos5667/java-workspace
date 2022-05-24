@@ -1,4 +1,4 @@
-package com.demo;
+package com.technology.java;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
