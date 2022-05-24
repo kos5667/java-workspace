@@ -1,4 +1,4 @@
-package com.technology.java;
+package com.technology.java.Lambda;
 
 public class LambdaTest {
  

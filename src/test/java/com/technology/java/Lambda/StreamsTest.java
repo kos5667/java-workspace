@@ -1,4 +1,4 @@
-package com.technology.java;
+package com.technology.java.Lambda;
 
 import java.io.IOException;
 
