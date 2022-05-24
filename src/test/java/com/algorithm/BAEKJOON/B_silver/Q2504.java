@@ -1,4 +1,4 @@
-package com.algorithm.BAEKJOON.silver;
+package com.algorithm.BAEKJOON.B_silver;
 
 /**
  * 2504 괄호의 값

@@ -1,4 +1,4 @@
-package com.algorithm.BAEKJOON.bronze;
+package com.algorithm.BAEKJOON.A_bronze;
 import java.util.Scanner;
 public class Q1000 {
     public static void main(String[] args) {

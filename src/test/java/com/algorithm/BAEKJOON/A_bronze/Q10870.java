@@ -1,4 +1,4 @@
-package com.algorithm.BAEKJOON.bronze;
+package com.algorithm.BAEKJOON.A_bronze;
 import java.util.*;
 /**
  * 피보나치 수 5

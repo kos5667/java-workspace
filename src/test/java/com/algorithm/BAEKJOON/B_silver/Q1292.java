@@ -1,4 +1,4 @@
-package com.algorithm.BAEKJOON.silver;
+package com.algorithm.BAEKJOON.B_silver;
 import java.io.*;
 import java.util.Scanner;
 import java.util.StringTokenizer;
