@@ -38,6 +38,7 @@
   * Lambda
   * Memory Heap, Stack
   * Recursive    
+  * Thread
   
 ## Technology
   * ElasticSearch
