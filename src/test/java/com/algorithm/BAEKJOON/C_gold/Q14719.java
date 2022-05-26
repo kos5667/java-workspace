@@ -15,11 +15,11 @@ public class Q14719 {
             }
         }
 
-        for(int i=0; i<box.length; i++) {
-            for(int j : box[i]) {
-                System.out.print(i+","+j+" ");
-            }
-            System.out.println();
-        }
+        // for(int i=0; i<box.length; i++) {
+        //     for(int j : box[i]) {
+        //         System.out.print(i+","+j+" ");
+        //     }
+        //     System.out.println();
+        // }
     }
 }
