@@ -1,25 +1,37 @@
 package com.algorithm.BAEKJOON.C_gold;
 
+import java.util.Scanner;
+
 /**
  * 14719 빗물
  * 골드Ⅴ
  */
 public class Q14719 {
+    
     public static void main(String[] args) {
-        int x=5,y = 5;
+        try (Scanner scan = new Scanner(System.in)) {
+            int h = scan.nextInt(), w = scan.nextInt();
 
-        int[][] box = new int[5][5];
-        for(int i=0; i<x; i++) {
-            for(int j=0; j<y; j++) {
-                box[i][j] = j;
+            int[] block = new int[w];
+            for(int i=0; i<w; i++) {
+                System.out.println(i);
             }
-        }
+            
+            // int[][] box = new int[h][w];
+            // for(int i=0; i<h; i++) {
+            //     for(int j=0; j<w; j++) {
+            //         box[i][j] = j;
+            //     }
+            // }
 
-        // for(int i=0; i<box.length; i++) {
-        //     for(int j : box[i]) {
-        //         System.out.print(i+","+j+" ");
-        //     }
-        //     System.out.println();
-        // }
+
+            // for(int i=0; i<box.length; i++) {
+            //     for(int j : box[i]) {
+            //         System.out.print(i+","+j+" ");
+            //     }
+            //     System.out.println();
+            // }
+        }
+        
     }
 }
