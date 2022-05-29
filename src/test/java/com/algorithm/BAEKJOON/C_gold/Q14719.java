@@ -14,23 +14,23 @@ public class Q14719 {
 
             int[] block = new int[w];
             for(int i=0; i<w; i++) {
-                System.out.println(i);
+                block[i] = scan.nextInt();
             }
             
-            // int[][] box = new int[h][w];
-            // for(int i=0; i<h; i++) {
-            //     for(int j=0; j<w; j++) {
-            //         box[i][j] = j;
-            //     }
-            // }
+            int[][] box = new int[h][w];
+            for(int i=0; i<h; i++) {
+                for(int j=0; j<w; j++) {
+                    box[i][j] = j;
+                }
+            }
 
-
-            // for(int i=0; i<box.length; i++) {
-            //     for(int j : box[i]) {
-            //         System.out.print(i+","+j+" ");
-            //     }
-            //     System.out.println();
-            // }
+            for(int i=0; i<box.length; i++) {
+                for(int j : box[i]) {
+                    System.out.print("□ ");
+                    System.out.print("■ ");
+                }
+                System.out.println();
+            }
         }
         
     }
