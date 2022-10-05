@@ -1,4 +1,4 @@
-package com.technology.java.Lambda;
+package com.skill.java.Lambda.src;
 
 public class LambdaTest {
  

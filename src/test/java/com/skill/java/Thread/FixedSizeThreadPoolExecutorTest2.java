@@ -1,4 +1,4 @@
-package com.technology.java.Thread;
+package com.skill.java.Thread;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
