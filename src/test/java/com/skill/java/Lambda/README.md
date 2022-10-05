@@ -82,6 +82,8 @@ String result = function.apply(5); // result = parameter : 5
 
 ##### andThen()
 
+다수의 Function 순차적 수행
+
 ```java
 // 이 함수를 입력에 먼저 적용한 다음 결과에 사후 함수를 적용하는 합성 함수를 반환합니다
 Function<Integer, Integer> function1 = (n) -> n + n;
@@ -90,6 +92,8 @@ String result = function1.andThen(function2).apply(5); // result = parameter : 1
 ```
 
 ##### compose()
+
+Function 합성
 
 ```java
 // 먼저 입력에 이전 함수를 적용한 다음 이 함수를 결과에 적용하는 합성 함수를 반환합니다
