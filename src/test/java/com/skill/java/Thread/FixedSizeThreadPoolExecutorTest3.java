@@ -1,4 +1,4 @@
-package com.technology.java.Thread;
+package com.skill.java.Thread;
 
 import java.time.LocalTime;
 import java.util.ArrayList;

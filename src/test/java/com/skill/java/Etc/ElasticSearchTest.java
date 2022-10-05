@@ -1,4 +1,4 @@
-package com.technology;
+package com.skill.java.Etc;
 
 // import org.apache.http.HttpHost;
 // import org.elasticsearch.client.RestClient;

@@ -1,4 +1,4 @@
-package com.technology;
+package com.skill;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

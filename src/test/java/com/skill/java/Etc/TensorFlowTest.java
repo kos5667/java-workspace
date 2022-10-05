@@ -1,4 +1,4 @@
-package com.technology;
+package com.skill.java.Etc;
 
 
 import org.junit.jupiter.api.Test;

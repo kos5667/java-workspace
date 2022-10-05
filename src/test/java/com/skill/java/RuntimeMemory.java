@@ -1,4 +1,4 @@
-package com.technology.java;
+package com.skill.java;
 
 public class RuntimeMemory {
     
