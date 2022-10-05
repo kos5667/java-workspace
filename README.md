@@ -36,11 +36,11 @@
 
 ## Java
   * AOP
-  * Lambda
+  * [Lambda](https://github.com/kos5667/Java-workspace/blob/main/src/test/java/com/skill/java/Lambda/README.md)
   * Memory Heap, Stack
   * Recursive    
   * Thread
-  
+
 ## Technology
   * ElasticSearch
   * TensorFlow
