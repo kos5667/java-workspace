@@ -103,3 +103,16 @@ Function<Integer, Integer> composeFunc = function2.compose(function1);
 Integer result = composeFunc.apply(3); // result = 15
 ```
 
+---
+
+#### Supplier<T>
+
+> **Type Parameters:**
+>
+> `T` - the type of results supplied by this supplier
+
+```java
+
+```
+
+---
