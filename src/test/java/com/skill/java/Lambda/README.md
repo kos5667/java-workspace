@@ -112,7 +112,8 @@ Integer result = composeFunc.apply(3); // result = 15
 > `T` - the type of results supplied by this supplier
 
 ```java
-
+Supplier<String> supplier = () -> "Hello World!";
+String result = supplier.get(); // result = Hello World!
 ```
 
 ---
