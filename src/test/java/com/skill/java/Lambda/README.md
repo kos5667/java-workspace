@@ -62,7 +62,7 @@
 
 ---
 
-#### Interface Function<T,R>
+#### [Interface Function]()<T,R>
 
 > **Type Parameters:**
 >
@@ -105,7 +105,7 @@ Integer result = composeFunc.apply(3); // result = 15
 
 ---
 
-#### [Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)<T>
+#### [Interface Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)\<T>
 
 > **Type Parameters:**
 >
