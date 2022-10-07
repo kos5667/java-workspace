@@ -6,9 +6,23 @@
 
 함수 인터페이스는 할당 컨텍스트, 메서드 호출 또는 캐스트 컨텍스트와 같은 여러 컨텍스트에서 대상 유형을 제공할 수 있습니다.
 
+
+
+
+
 ---
 
 ### **Interface Summary**
+
+| Interface                                                    | Description                                        |
+| ------------------------------------------------------------ | -------------------------------------------------- |
+| [Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)<T> | Represents a supplier of results.                  |
+| [IntSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html) | Represents a supplier of `int`-valued results.     |
+| [LongSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html) | Represents a supplier of `long`-valued results.    |
+| [DoubleSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html) | Represents a supplier of `double`-valued results.  |
+| [BooleanSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html) | Represents a supplier of `boolean`-valued results. |
+
+
 
 | Interface                                                    | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -16,13 +30,11 @@
 | [BiFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html)<T,U,R> | Represents a function that accepts two arguments and produces a result. |
 | [BinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html)<T> | Represents an operation upon two operands of the same type, producing a result of the same type as the operands. |
 | [BiPredicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html)<T,U> | Represents a predicate (boolean-valued function) of two arguments. |
-| [BooleanSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html) | Represents a supplier of `boolean`-valued results.           |
 | [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html)<T> | Represents an operation that accepts a single input argument and returns no result. |
 | [DoubleBinaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html) | Represents an operation upon two `double`-valued operands and producing a `double`-valued result. |
 | [DoubleConsumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html) | Represents an operation that accepts a single `double`-valued argument and returns no result. |
 | [DoubleFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html)<R> | Represents a function that accepts a double-valued argument and produces a result. |
 | [DoublePredicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html) | Represents a predicate (boolean-valued function) of one `double`-valued argument. |
-| [DoubleSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html) | Represents a supplier of `double`-valued results.            |
 | [DoubleToIntFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html) | Represents a function that accepts a double-valued argument and produces an int-valued result. |
 | [DoubleToLongFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html) | Represents a function that accepts a double-valued argument and produces a long-valued result. |
 | [DoubleUnaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html) | Represents an operation on a single `double`-valued operand that produces a `double`-valued result. |
@@ -31,7 +43,6 @@
 | [IntConsumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html) | Represents an operation that accepts a single `int`-valued argument and returns no result. |
 | [IntFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html)<R> | Represents a function that accepts an int-valued argument and produces a result. |
 | [IntPredicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html) | Represents a predicate (boolean-valued function) of one `int`-valued argument. |
-| [IntSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html) | Represents a supplier of `int`-valued results.               |
 | [IntToDoubleFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html) | Represents a function that accepts an int-valued argument and produces a double-valued result. |
 | [IntToLongFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToLongFunction.html) | Represents a function that accepts an int-valued argument and produces a long-valued result. |
 | [IntUnaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html) | Represents an operation on a single `int`-valued operand that produces an `int`-valued result. |
@@ -39,7 +50,6 @@
 | [LongConsumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html) | Represents an operation that accepts a single `long`-valued argument and returns no result. |
 | [LongFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html)<R> | Represents a function that accepts a long-valued argument and produces a result. |
 | [LongPredicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html) | Represents a predicate (boolean-valued function) of one `long`-valued argument. |
-| [LongSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html) | Represents a supplier of `long`-valued results.              |
 | [LongToDoubleFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToDoubleFunction.html) | Represents a function that accepts a long-valued argument and produces a double-valued result. |
 | [LongToIntFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToIntFunction.html) | Represents a function that accepts a long-valued argument and produces an int-valued result. |
 | [LongUnaryOperator](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html) | Represents an operation on a single `long`-valued operand that produces a `long`-valued result. |
@@ -47,7 +57,6 @@
 | [ObjIntConsumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html)<T> | Represents an operation that accepts an object-valued and a `int`-valued argument, and returns no result. |
 | [ObjLongConsumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html)<T> | Represents an operation that accepts an object-valued and a `long`-valued argument, and returns no result. |
 | [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html)<T> | Represents a predicate (boolean-valued function) of one argument. |
-| [Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)<T> | Represents a supplier of results.                            |
 | [ToDoubleBiFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html)<T,U> | Represents a function that accepts two arguments and produces a double-valued result. |
 | [ToDoubleFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html)<T> | Represents a function that produces a double-valued result.  |
 | [ToIntBiFunction](https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntBiFunction.html)<T,U> | Represents a function that accepts two arguments and produces an int-valued result. |
@@ -62,7 +71,7 @@
 
 ---
 
-#### Interface Function<T,R>
+#### Interface Function<T,R> Summary
 
 > **Type Parameters:**
 >
@@ -105,7 +114,17 @@ Integer result = composeFunc.apply(3); // result = 15
 
 ---
 
-#### Supplier<T>
+#### Interface Supplier<T> Summary
+
+| Interface                                                    | Description                                        |
+| ------------------------------------------------------------ | -------------------------------------------------- |
+| [Supplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)<T> | Represents a supplier of results.                  |
+| [IntSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html) | Represents a supplier of `int`-valued results.     |
+| [LongSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html) | Represents a supplier of `long`-valued results.    |
+| [DoubleSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html) | Represents a supplier of `double`-valued results.  |
+| [BooleanSupplier](https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html) | Represents a supplier of `boolean`-valued results. |
+
+##### Supplier
 
 > **Type Parameters:**
 >
@@ -115,5 +134,23 @@ Integer result = composeFunc.apply(3); // result = 15
 Supplier<String> supplier = () -> "Hello World!";
 String result = supplier.get(); // result = Hello World!
 ```
+
+##### IntSupplier
+
+> **Type Parameters:**
+>
+> 
+
+##### LongSupplier
+
+> 
+
+##### DoubleSupplier
+
+> 
+
+##### BooleanSupplier
+
+> 
 
 ---
