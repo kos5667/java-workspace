@@ -1,4 +1,4 @@
-package com.skill.java;
+package com.skill.java.Etc;
 
 public class RunningTimeModule {
     

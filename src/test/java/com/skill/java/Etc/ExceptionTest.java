@@ -1,4 +1,4 @@
-package com.skill.java;
+package com.skill.java.Etc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.stereotype.Controller;
