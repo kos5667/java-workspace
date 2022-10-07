@@ -1,4 +1,4 @@
-package com.skill.java.Lambda.src;
+package com.skill.java.Lambda.example;
 
 public class Lambda_Thread {
     public static void main(String[] args) {

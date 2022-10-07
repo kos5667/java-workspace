@@ -1,4 +1,4 @@
-package com.skill.java.Lambda.src;
+package com.skill.java.Lambda.stream;
 
 import java.io.IOException;
 

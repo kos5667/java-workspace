@@ -1,5 +1,6 @@
-package com.skill.java.Lambda.src;
+package com.skill.java.Lambda.functional;
 
+import java.util.function.BooleanSupplier;
 import java.util.function.DoubleSupplier;
 import java.util.function.IntSupplier;
 import java.util.function.LongSupplier;
@@ -84,5 +85,8 @@ public class SupplierEx {
 
     public static void booleanSupplier() {
 
+        BooleanSupplier booleanSupplier = () -> true;
+
+        booleanSupplier.getAsBoolean();
     }
 }
