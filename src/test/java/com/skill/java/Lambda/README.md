@@ -137,9 +137,10 @@ String result = supplier.get(); // result = Hello World!
 
 ##### IntSupplier
 
-> **Type Parameters:**
->
-> 
+```java
+IntSupplier intSupplier1 = () -> 2 * 3; // result = 6
+IntSupplier intSupplier2 = () -> { return (int) (Math.random() * 10); };
+```
 
 ##### LongSupplier
 
