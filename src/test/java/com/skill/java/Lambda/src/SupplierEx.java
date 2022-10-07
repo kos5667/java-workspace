@@ -1,5 +1,6 @@
 package com.skill.java.Lambda.src;
 
+import java.util.function.DoubleSupplier;
 import java.util.function.IntSupplier;
 import java.util.function.LongSupplier;
 import java.util.function.Supplier;
@@ -12,9 +13,13 @@ public class SupplierEx {
     public static void main(String[] args) {
         // supplierEx();
 
-        intSupplierEx();
+        // intSupplierEx();
 
         // longSupplier();
+
+        // doubleSupplier();
+
+        booleanSupplier();
     }
 
     public static void supplierEx() {
@@ -58,7 +63,23 @@ public class SupplierEx {
     }
 
     public static void doubleSupplier() {
+        DoubleSupplier doubleSupplier1 = () -> Double.MAX_VALUE; // 1.7976931348623157E308
 
+        DoubleSupplier doubleSupplier2 = () -> Double.MIN_VALUE; // 4.9E-324
+
+        DoubleSupplier doubleSupplier3 = () -> Double.MIN_NORMAL; // 2.2250738585072014E-308
+
+        double result1 = doubleSupplier1.getAsDouble();
+
+        double result2 = doubleSupplier2.getAsDouble();
+
+        double result3 = doubleSupplier3.getAsDouble();
+
+        System.out.println(result1);
+
+        System.out.println(result2);
+
+        System.out.println(result3);
     }
 
     public static void booleanSupplier() {
