@@ -138,13 +138,17 @@ String result = supplier.get(); // result = Hello World!
 ##### IntSupplier
 
 ```java
-IntSupplier intSupplier1 = () -> 2 * 3; // result = 6
-IntSupplier intSupplier2 = () -> { return (int) (Math.random() * 10); };
+IntSupplier intSupplier1 = () -> Integer.MAX_VALUE; // 2147483647
+IntSupplier intSupplier2 = () -> Integer.MIN_VALUE; // -2147483648
+IntSupplier intSupplier3 = () -> { return (int) (Math.random() * 10); };
 ```
 
 ##### LongSupplier
 
-> 
+```java
+LongSupplier longSupplier1 = () -> Long.MAX_VALUE; // 9223372036854775807
+LongSupplier longSupplier2 = () -> Long.MIN_VALUE; // -9223372036854775808
+```
 
 ##### DoubleSupplier
 
