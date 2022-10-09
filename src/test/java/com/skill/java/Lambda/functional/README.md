@@ -6,6 +6,22 @@
 
 함수 인터페이스는 할당 컨텍스트, 메서드 호출 또는 캐스트 컨텍스트와 같은 여러 컨텍스트에서 대상 유형을 제공할 수 있습니다.
 
+### **@Functional Interfaces**
+
+It's recommended that all functional interfaces have an informative *@FunctionalInterface* annotation. This clearly communicates the purpose of the interface, and also allows a compiler to generate an error if the annotated interface does not satisfy the conditions.
+
+
+
+| Functional Interfaces | Descripter      | Method                    |
+| --------------------- | --------------- | ------------------------- |
+| PPredicate            | `T -> boolean`  | `boolean test(T t)`       |
+| Consumer              | `T -> void`     | `void accept(T t)`        |
+| Supplier              | `() -> T`       | `T get()`                 |
+| Function<T, R>        | `T -> R`        | `R apply(T t)`            |
+| Comparator            | `(T, T) -> int` | `int compare(T o1, T o2)` |
+| Runnable              | `() -> void`    | `void run()`              |
+| Callable              | `() -> T`       | `V call()`                |
+
 
 
 ### Interface Summary
