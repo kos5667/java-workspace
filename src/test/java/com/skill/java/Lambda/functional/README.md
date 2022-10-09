@@ -75,7 +75,13 @@ Integer result = composeFunc.apply(3); // result = 15
 
 #####  BiFunction<T,U,R>
 
-> 
+> **Type Parameters:**
+>
+> `T` - the type of the first argument to the function
+>
+> `U` - the type of the second argument to the function
+>
+> `R` - the type of the result of the function
 
 ```java
 
