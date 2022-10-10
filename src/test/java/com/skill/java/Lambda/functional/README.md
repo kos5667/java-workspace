@@ -267,18 +267,40 @@ Integer result = unaryOperator.apply(2); // 4;
 >  `boolean`
 
 ```java
+Predicate<Integer> predicate = i -> i > 2;
+predicate.test(1); // false
+predicate.test(3); // true
 
 ```
 
-###### test()
+###### and()
 
+```java
+Predicate<Integer> predicate1 = (num) -> num > 10;
+Predicate<Integer> predicate2 = (num) -> num < 20;
+
+boolean result = predicate1.and(predicate2).test(25);
+System.out.println("25 : 10 < num < 20 ? " + result); // false
+
+result = predicate1.and(predicate2).test(15);
+System.out.println("15: 10 < num < 20 ? " + result); // true
 ```
 
+###### or()
+
+```java
+Predicate<Integer> predicate1 = (num) -> num > 10;
+Predicate<Integer> predicate2 = (num) -> num < 0;
+
+boolean result = predicate1.or(predicate2).test(5);
+System.out.println("5 : num < 0 or num > 10 ? " + result); // false
+
+result = predicate1.or(predicate2).test(15);
+System.out.println("15 : num < 0 or num > 10 ? " + result); // true
+
+result = predicate1.or(predicate2).test(-5);
+System.out.println("-5 : num < 0 or num > 10 ? " + result); // true
 ```
 
-##### and
-
-```
-
-```
+---
 
