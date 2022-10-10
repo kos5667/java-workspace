@@ -14,7 +14,7 @@ It's recommended that all functional interfaces have an informative *@Functional
 
 | Functional Interfaces | Descripter      | Method                    |
 | --------------------- | --------------- | ------------------------- |
-| PPredicate            | `T -> boolean`  | `boolean test(T t)`       |
+| Predicate             | `T -> boolean`  | `boolean test(T t)`       |
 | Consumer              | `T -> void`     | `void accept(T t)`        |
 | Supplier              | `() -> T`       | `T get()`                 |
 | Function<T, R>        | `T -> R`        | `R apply(T t)`            |
@@ -168,10 +168,13 @@ BooleanSupplier booleanSupplier = () -> true; // true
 
 ##### Consumer\<T>
 
->  
+>  **Type Parameters:**
+>
+>  `T` - the type of the input to the operation
 
 ```java
-
+Consumer<String> consumer = s -> System.out.println(s.toUpperCase());
+consumer.accept("hello world");
 ```
 
 ---
