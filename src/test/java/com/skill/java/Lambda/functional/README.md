@@ -10,8 +10,6 @@
 
 It's recommended that all functional interfaces have an informative *@FunctionalInterface* annotation. This clearly communicates the purpose of the interface, and also allows a compiler to generate an error if the annotated interface does not satisfy the conditions.
 
-
-
 | Functional Interfaces | Description                                               | Descripter    | Method                    |
 | --------------------- | --------------------------------------------------------- | ------------- | ------------------------- |
 | Predicate             | 값을 전달받아 true/false를 리턴한다                       | `T → boolean` | `boolean test(T t)`       |
@@ -56,10 +54,11 @@ It's recommended that all functional interfaces have an informative *@Functional
 ##### Function<T,R>
 
 > **Type Parameters:**
->
 > `T` - the type of the input to the function
->
 > `R` - the type of the result of the function
+>
+> **Returns:**
+> `T` - the function result
 
 #####  BiFunction<T,U,R>
 
@@ -117,8 +116,10 @@ Integer result = composeFunc.apply(3); // result = 15
 ##### Supplier\<T>
 
 > **Type Parameters:**
->
 > `T` - the type of results supplied by this supplier
+>
+> **Returns:**
+> `T` - Gets a result.
 
 ```java
 Supplier<String> supplier = () -> "Hello World!";
@@ -172,8 +173,10 @@ BooleanSupplier booleanSupplier = () -> true; // true
 ##### Consumer\<T>
 
 >  **Type Parameters:**
->
 >  `T` - the type of the input to the operation
+>
+>  **Returns:**
+>  `void`
 
 ```java
 Consumer<String> consumer = s -> System.out.println(s.toUpperCase());
@@ -194,8 +197,10 @@ consumer.accept("hello world");
 ##### BinaryOperator\<T>
 
 >  **Type Parameters:**
->
 >  `T` - the type of the operands and result of the operator
+>
+>  **Returns:**
+>  `T` - a `BinaryOperator` which returns the lesser of its operands, according to the supplied `Comparator`
 
 ```java
 // Example1
@@ -219,8 +224,6 @@ Item item2 = new Item(20, "key2");
 Item min = binaryOperator4.apply(item1, item2); // item1
 ```
 
-
-
 #### Interface  UnaryOperator\<T>
 
 | Interface                                                    | Description                                                  |
@@ -232,10 +235,15 @@ Item min = binaryOperator4.apply(item1, item2); // item1
 
 ##### UnaryOperator\<T>
 
->  
+>  **Type Parameters:**
+>  `T` - the type of the operand and result of the operator
+>
+>  **Returns:**
+>  `T` - a unary operator that always returns its input argument
 
 ```java
-
+UnaryOperator<Integer> unaryOperator = x -> x * 2;
+Integer result = unaryOperator.apply(2); // 4;
 ```
 
 ---
@@ -252,8 +260,25 @@ Item min = binaryOperator4.apply(item1, item2); // item1
 
 ##### Predicate\<T>
 
->  
+>  **Type Parameters:**
+>  `T` - the type of the input to the predicate
+>
+>  **Returns:**
+>  `boolean`
 
 ```java
 
 ```
+
+###### test()
+
+```
+
+```
+
+##### and
+
+```
+
+```
+
