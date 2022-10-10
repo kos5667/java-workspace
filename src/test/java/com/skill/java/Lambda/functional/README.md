@@ -12,15 +12,18 @@ It's recommended that all functional interfaces have an informative *@Functional
 
 
 
-| Functional Interfaces | Descripter      | Method                    |
-| --------------------- | --------------- | ------------------------- |
-| Predicate             | `T -> boolean`  | `boolean test(T t)`       |
-| Consumer              | `T -> void`     | `void accept(T t)`        |
-| Supplier              | `() -> T`       | `T get()`                 |
-| Function<T, R>        | `T -> R`        | `R apply(T t)`            |
-| Comparator            | `(T, T) -> int` | `int compare(T o1, T o2)` |
-| Runnable              | `() -> void`    | `void run()`              |
-| Callable              | `() -> T`       | `V call()`                |
+| Functional Interfaces | Description                                               | Descripter    | Method                    |
+| --------------------- | --------------------------------------------------------- | ------------- | ------------------------- |
+| Predicate             | 값을 전달받아 true/false를 리턴한다                       | `T → boolean` | `boolean test(T t)`       |
+| Consumer              | 값을 받아서 처리만 하고 결과 리턴은 하지 않는다           | `T → void`    | `void accept(T t)`        |
+| Supplier              | 입력값 없이 리턴값만 있다                                 | `() → T`      | `T get()`                 |
+| Function<T, R>        | 값을 다른 값으로 변환해 리턴한다                          | `T → R`       | `R apply(T t)`            |
+| UnaryOperator\<T>     | 입력과 리턴 타입이 동일. `Function`.                      | `T -> R`      |                           |
+| BinaryOperator\<T>    | 입력(2개)과 리턴 타입이 동일. `Function`.                 | `(T,T) → R`   |                           |
+| Comparator            | Compares its two arguments for order.                     | `(T,T) → int` | `int compare(T o1, T o2)` |
+| Comparable            | Compares this object with the specified object for order. | `(T) → int`   | `int compareTo(T o)`      |
+| Runnable              | -                                                         | `() → void`   | `void run()`              |
+| Callable              | -                                                         | `() → T`      | `V call()`                |
 
 
 
@@ -190,15 +193,29 @@ consumer.accept("hello world");
 
 ##### BinaryOperator\<T>
 
->  
+>  **Type Parameters:**
+>
+>  `T` - the type of the operands and result of the operator
 
 ```java
+// Example1
+BinaryOperator<Integer> binaryOperator1 = (x, y) -> x + y;
+Integer result1 = binaryOperator1.apply(1, 2); // 3
 
+// Example2
+Comparator<Integer> comparator1 = Comparator.naturalOrder();
+BinaryOperator<Integer> binaryOperator2 = BinaryOperator.minBy(comparator1);
+Integer result2 = binaryOperator2.apply(2, 5); // 2
+
+// Example3
+Comparator<Integer> comparator2 = Comparator.reverseOrder();
+BinaryOperator<Integer> binaryOperator3 = BinaryOperator.maxBy(comparator2);
+Integer result3 = binaryOperator3.apply(2, 5); // 5
 ```
 
 
 
-#### Interface BinaryOperator\<T>
+#### Interface  UnaryOperator\<T>
 
 | Interface                                                    | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -217,7 +234,7 @@ consumer.accept("hello world");
 
 ---
 
-#### Interface BinaryOperator\<T>
+#### Interface Predicate\<T>
 
 | Interface                                                    | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
