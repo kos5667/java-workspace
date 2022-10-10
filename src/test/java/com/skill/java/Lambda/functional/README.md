@@ -58,6 +58,16 @@ It's recommended that all functional interfaces have an informative *@Functional
 >
 > `R` - the type of the result of the function
 
+#####  BiFunction<T,U,R>
+
+> **Type Parameters:**
+>
+> `T` - the type of the first argument to the function
+>
+> `U` - the type of the second argument to the function
+>
+> `R` - the type of the result of the function
+
 ```java
 // Example1
 Function<Integer, String> function = (n) -> "parameter : " + n;
@@ -87,20 +97,6 @@ Function<Integer, Integer> function1 = n -> n + 2; // 3 + 2 = 5
 Function<Integer, Integer> function2 = n -> n * 3; // 5 * 3 = 15
 Function<Integer, Integer> composeFunc = function2.compose(function1);
 Integer result = composeFunc.apply(3); // result = 15
-```
-
-#####  BiFunction<T,U,R>
-
-> **Type Parameters:**
->
-> `T` - the type of the first argument to the function
->
-> `U` - the type of the second argument to the function
->
-> `R` - the type of the result of the function
-
-```java
-
 ```
 
 ---
@@ -178,18 +174,6 @@ BooleanSupplier booleanSupplier = () -> true; // true
 
 ```
 
-
-
-##### BiConsumer
-
->  
-
-```java
-
-```
-
-
-
 ---
 
 #### Interface BinaryOperator\<T>
@@ -241,14 +225,6 @@ BooleanSupplier booleanSupplier = () -> true; // true
 | [DoublePredicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html) | Represents a predicate (boolean-valued function) of one `double`-valued argument. |
 
 ##### Predicate\<T>
-
->  
-
-```java
-
-```
-
-##### BiPredicate\<T>
 
 >  
 
