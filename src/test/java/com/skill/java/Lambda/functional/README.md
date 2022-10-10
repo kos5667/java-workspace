@@ -211,6 +211,12 @@ Integer result2 = binaryOperator2.apply(2, 5); // 2
 Comparator<Integer> comparator2 = Comparator.reverseOrder();
 BinaryOperator<Integer> binaryOperator3 = BinaryOperator.maxBy(comparator2);
 Integer result3 = binaryOperator3.apply(2, 5); // 5
+
+// Example4
+BinaryOperator<Item> binaryOperator4 = BinaryOperator.minBy((Item i1, Item i2) -> i1.getKey() - i2.getKey());
+Item item1 = new Item(10, "key1");
+Item item2 = new Item(20, "key2");
+Item min = binaryOperator4.apply(item1, item2); // item1
 ```
 
 

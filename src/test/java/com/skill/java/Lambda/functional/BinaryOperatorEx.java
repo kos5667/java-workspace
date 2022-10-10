@@ -22,7 +22,6 @@ public class BinaryOperatorEx {
         BinaryOperator<Item> binaryOperator4 = BinaryOperator.minBy((Item i1, Item i2) -> i1.getKey() - i2.getKey());
         Item item1 = new Item(10, "key1");
         Item item2 = new Item(20, "key2");
-
         Item min = binaryOperator4.apply(item1, item2);
         System.out.println(min.toString());
     }
